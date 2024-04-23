@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe-finder</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="top-section">
+            <div class="top-section__container _container">
+                <h2 class="section-title">Healthy Recipes</h2>
+                <div class="section__undertitle">
+                    <p>with features</p>
+                    <a>See all</a>
+                </div>
+                <div class="top-section__recipes recipes">
+                    <div class="receipes__item item-recipe">
+                        <img src="./assets/images/keto-salad.svg" alt="" class="item-recipe__img">
+                        <h3 class="item-recipe__title">Keto Salad</h3>
+                        <div class="item-recipe__footer">
+                            <p class="item-recipe__ingredients">Beans & fruits</p>
+                            <div class="item-recipe__rating">
+                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="10" height="11" fill="url(#pattern0_94_254)"/>
+                                    <defs>
+                                    <pattern id="pattern0_94_254" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_94_254" transform="matrix(0.0111111 0 0 0.010101 0 0.0454545)"/>
+                                    </pattern>
+                                    <image id="image0_94_254" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>   
+                                <span>4.9</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receipes__item item-recipe">
+                        <img src="./assets/images/sewers-salad.svg" alt="" class="item-recipe__img">
+                        <h3 class="item-recipe__title">Sewers Salad</h3>
+                        <div class="item-recipe__footer">
+                            <p class="item-recipe__ingredients">Chicken & dal</p>
+                            <div class="item-recipe__rating">
+                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="10" height="11" fill="url(#pattern0_94_254)"/>
+                                    <defs>
+                                    <pattern id="pattern0_94_254" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_94_254" transform="matrix(0.0111111 0 0 0.010101 0 0.0454545)"/>
+                                    </pattern>
+                                    <image id="image0_94_254" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>   
+                                <span>4.5</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receipes__item item-recipe">
+                        <img src="./assets/images/keto-salad.svg" alt="" class="item-recipe__img">
+                        <h3 class="item-recipe__title">Keto Salad</h3>
+                        <div class="item-recipe__footer">
+                            <p class="item-recipe__ingredients">Beans & fruits</p>
+                            <div class="item-recipe__rating">
+                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="10" height="11" fill="url(#pattern0_94_254)"/>
+                                    <defs>
+                                    <pattern id="pattern0_94_254" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_94_254" transform="matrix(0.0111111 0 0 0.010101 0 0.0454545)"/>
+                                    </pattern>
+                                    <image id="image0_94_254" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>   
+                                <span>4.9</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receipes__item item-recipe">
+                        <img src="./assets/images/keto-salad.svg" alt="" class="item-recipe__img">
+                        <h3 class="item-recipe__title">Keto Salad</h3>
+                        <div class="item-recipe__footer">
+                            <p class="item-recipe__ingredients">Beans & fruits</p>
+                            <div class="item-recipe__rating">
+                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="10" height="11" fill="url(#pattern0_94_254)"/>
+                                    <defs>
+                                    <pattern id="pattern0_94_254" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_94_254" transform="matrix(0.0111111 0 0 0.010101 0 0.0454545)"/>
+                                    </pattern>
+                                    <image id="image0_94_254" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAACM9JREFUeF7tnXusXEUdx7/f3TOze4sQUCktgVpA/MOADzCgaKNQgkYCPjDyR0soarEGbAW0CUoVrE9AEZpoFETkIb6CSjA1Vh4iBCKIKGKMGhTiEywiSO/umdn9ydzdtvex994558yce65358/d3/NzZuecmfObWWLYSiHAUrwMnWAIuqROMAQ9BF0SgZLczKseLSIJrD0WgCBJbifZKYlTYTfzBrSIKNj0DoDH9LO+C4k6lqQtTKEEA/MHtG2vgvD6CUwoq5k0biiBU2EX8we0ad8C8MSJGcstVI2TClMowcC8AC0ie8OafwLQk5gYJGoJySdLYFXIxfwAnaZngLh6YKaCM6j1NYUolKA8P0Cb9laAbxrMQ7ZSNd5cAqtCLioPWkT2gTX/GDBs7EzcDR9LSW4vRCKycvVBp+laEF+ZkYNgLbW+KjKrQuarD9qk2wAcP0uW26j0CYVIRFauNGgReSGs+TuAZBYOHSRqf5KPR+aV23y1QafpOhBf8spOsI5af9lLdg6Eqg3apLcBcGsbPu02Kr3SR3AuZCoLWkSWwJq/AKh7gukiMQeQe7ihpnKtuqDT1tlgbUsmYoKzqPUXM+mUJFxd0Ca9E8CKbBy6P6VqviGbTjnSlQQt8uxSWOWGjVpGDF0kdhm56K8Z9aKLVxN02toA1r6QK3vBBmp9RS7diErVBG3ad49b4M+YfvduqubrMipFF68caJEdB8AmjwG539ALks5ycsTZqEyrHmhjzgXkc4UISfdc6uZlhWwEVq4g6PReAEcXzPNeKv2agjaCqlcKtMjoMtj6nwsMGzvhCGznYI6MOFuVaNUCbdobAX42DJnuRqrmJWFsFbdSMdDp/QCOLJ7WmIX7qPRRgWwVNlMZ0NJqHYx67Y8Bho3dUDrdQ9lsOptz3qoD2rTPB/ipsER4PpX6TFib+axFAy0ibtVtr6lh7WiiXR+Z8nm9dhOAl+dLY1qtB9HpnjLl20bjaQBTyslI/juw/13mBoKWND0KlM0gXzzBseB5ANSAYPYO+pOPlW0+u+6CuAszuaUgnp3IR/4A4SZqfd9k4SmgRWQvWPMnAM/PF9eC19qORB1E8pnxJKaCNmYFIG6JcthyE+AxVOqemUGL7Atr3DpBM7efha04ikQtI/mvGUG7L8W2TobUXOXmngubWebs/wt2VzFp3jzrGL1TQFqtl6Be+xaAV2R2tzAVfouuvJONxsOD0p/x8U5EGrDmYgDrFyY7z6wF10GpdSR3TKfh9Rwttv02CL8KYB9P1wtF7BlQ3sukceNsCXuBHhu3ZfRFsPVvAnj1bEYXyPcPoNM91XeK7w26B9tt1kk/AXDj//EEZfZ+4oou62o9yfbswj2JTKB33Sh7TyVfW4CTmqdBWcuk8W1fwDvlcoHu9e4dB8LWbgRqr83qdJ7K398fKh7JE39u0OOGkgsAbspRg5En3rnQEQBbkKgPkUzzBlAI9K6hxJjjAXETnP3yBlJRve1g93QmzR8WjS8I6P5Q4soEvpG9jKtoCrH05eew3VNDvXcMBro/lNRh003zfCjZOVR8kKQJdRmDgt49lIweB7i1Ei4NFWg5drpPgMnpTJKtof1FAd3v3Yth0+sAVnpvyTigdyAxq8g9/hYacu7naN9ARISwdiMgn8xQUO5rPpScAHIxEv2RmKclROvR4ymIMa5m+QZA9g9FJ5CdxwGeRqV+HMjetGZKAb17KDF3PQf80NhJedr/PRK1oqydXGWCVv2N81VZAXwKiVoc8slipgtcHujepMZtzqxQ66ykGnE7v6K38kDbdAsEZ0fPKJuDK6j0hmwq+aRLAT329GHMoyAOzBdmJC3BY1BqOUk3SYnaygGdpq8CMaWoJGpmvsYFR1LrB3zF88qVA9q0NwO8IG+QcfXk41SNj8X1kXPhP2tQYtKHAByWVa8k+V9T6dA1f1NCj96jpdU6pF+OWxK3HG463UPYbOZa0Pf1Fh+0MecBcqlvQHMjx/Oo1Odj+i4BdJ6txjFTHmj7Tir9+pheo4IWkcWwxq2G+Z5QEDPXmWy7g1XcuUxPxAogLug0fTeISp91tAus4F3U2r3Zj9LigjbmB4CcHDhytw/RtcCFPLyZSr0lcKy7zEUDLSKLYI37KS4KFHxn7KaaaPfGXWCtu8lunmYHQh6Xrtx2X5ITq/jzWBqgEw+0bZ8C4XeDxCl4FBxbN/7ZeHuSpkejhushmLgFJK9TytuZNL6XV30mvXig0/RaEKcVD5rfQZKcSfKpQbZEZE90zKUQnFnYl+Dr1HpNYTtl9eixHVm9Q1tfUCDo/4Bylu+xxWLb74DQnRJWZO/Nk0jUfjHOpI7So8W4t+D1WwtAvged7uqss7VemVpyLYACx/3wOCp1e4HYB6pGAp1enrN43Y69yE305rwvSntLsu31YM0V0E8+BtmH3+VU+gM+gllk4oC26SMQHJQlEAC/g2A1tf5FRr2B4tJuH44a3Wnph2ey5268amz7WtA16uCgJU2PAJENVm9rwvtCP1qJyAiscVuU35+pRFlwBLX+ZaYLNItweNCmfRHAj/oF6SqD8J5Bu5j89P2kxLTeCPAagEs8NS6ialzoJ+snFQF0+isAL/Nwvw2JWROrMmiy/966S3r11P8JGBjpg1T6lR45eIsEBS2jo8uR1N325pla67n3DRciSS4h2fWONIBg/92lO4/anbc084y1d4LNbLl4RxUWdNo6B6zNtK77MASrqLXr9XPWpN1+af9GOf0eSsE51Drf2XsDMgsLevqz+N0d/DIk6sNZNtjEvBIi0oQ1nwbgyg0GcAj73wGBQafuQX/SZIFuPXoNlapY8UzvMooxJwBdd6OcXGJ8K5We7SR2774QFrRtnQipfX/3Cea8qb9OUek/OuidvG6vBOStfXIW4ElU6kfeJEt/vHMTBXIlyIeoVJFpeKgcve2IK1sTOQwiP2Gj8RtvRQ/BoD3aw9+CFRmCLunSD0EPQZdEoCQ3wx49BF0SgZLcDHt0SaD/B3Vzt3myONkzAAAAAElFTkSuQmCC"/>
+                                    </defs>
+                                </svg>   
+                                <span>4.9</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receipes__item item-recipe">
+                        <img src="./assets/images/keto-salad.svg" alt="" class="item-recipe__img">
+                        <h3 class="item-recipe__title">Keto Salad</h3>
+                        <div class="item-recipe__footer">
+                            <p class="item-recipe__ingredients">Beans & fruits</p>
+                            <div class="item-recipe__rating">
+                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="10" height="11" fill="url(#pattern0_94_254)"/>
+                                    <defs>
+                                    <pattern id="pattern0_94_254" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_94_254" transform="matrix(0.0111111 0 0 0.010101 0 0.0454545)"/>
+                                    </pattern>
+                                    <image id="image0_94_254" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>   
+                                <span>4.9</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
