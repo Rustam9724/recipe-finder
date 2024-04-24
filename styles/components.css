@@ -1,0 +1,20 @@
+.section-title {
+  font-size: 2.4rem;
+  line-height: 133.3333333333%;
+  color: #181A20; }
+
+.section__undertitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section__undertitle p {
+    font-size: 1.8rem;
+    line-height: 133.3333333333%;
+    color: #F6B100; }
+  .section__undertitle a {
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: #9F9F9F;
+    letter-spacing: 1px; }
+
+/*# sourceMappingURL=components.css.map */

@@ -1,0 +1,30 @@
+// colors
+$secondary: #181A20;
+$primary: #F6B100;
+$quick-silver: #9F9F9F;
+
+// components
+.section-title {
+    font-size: 2.4rem;
+    line-height: 32/24 * 100%;
+    color: $secondary;
+}
+
+.section__undertitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 1.8rem;
+        line-height: 24/18 * 100%;
+        color: $primary;
+    }
+
+    a {
+        font-size: 1.4rem;
+        line-height: 21/14 * 100%;
+        color: $quick-silver;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,87 @@
+.top-section {
+
+    .top-section__container {
+    
+        .top-section__undertitle {
+            margin: 0 0 66px;
+        }
+
+        .top-section__recipes {
+            display: flex;
+            justify-content: center;
+            column-gap: 16/375 * 100%;
+
+            .item-recipe {
+                width: 168px;
+                height: 182px;
+                border: 1px solid black;
+                border-radius: 70px 70px 20px 20px;
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+                padding: 0 8px 16px 16px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .item-recipe__img {
+                    width: 200%;
+                    aspect-ratio: 227/213;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-24%, -40%);
+                }
+                
+                .item-recipe__title {
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    line-height: 24/18 * 100%;
+                    color: $secondary;
+                }
+
+                .item-recipe__footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .item-recipe__ingredients {
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 16/14 * 100%;
+                        color: $quick-silver;
+                    }
+
+                    .item-recipe__rating {
+                        width: 35px;
+                        height: 16px;
+                        background-color: $primary;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        font-size: 0.8rem;
+                        line-height: 16/8 * 100%;
+                        letter-spacing: -8%;
+                        border-radius: 45%;
+                        column-gap: 2px;
+                        
+                        span {
+                            display: block;
+                            margin-top: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 834px) {
+            .top-section__recipes {
+                justify-content: space-between;
+                column-gap: unset;
+            }
+        }
+    }
+}
