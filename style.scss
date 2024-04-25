@@ -1,6 +1,7 @@
 @import "./styles/components.scss";
 @import "./styles/top-section.scss";
 @import "./styles/middle-section.scss";
+@import "./styles/comments.scss";
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
     padding: 0;
@@ -40,7 +41,7 @@ html, body {
 }
 
 .wrapper {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 ._container {
