@@ -1,6 +1,8 @@
 .middle-section {
+    margin: 0 0 14vw;
 
     .middle-section__container {
+        display: grid;
 
         .block-learn {
             padding: 22px 24px 16px;
@@ -19,6 +21,13 @@
                 max-width: 65%;
             }
 
+            @media (min-width: 1137px) {
+                .block-learn__text {
+                    font-size: 2.6rem;
+                    max-width: 70%;
+                }
+            }
+
             .block-learn__btn {
                 padding: 7.5px 22.5px;
                 background-color: white;
@@ -26,6 +35,12 @@
                 font-size: 1.4rem;
                 line-height: 17/14 * 100%;
                 color: $primary;
+            }
+
+            @media (min-width: 1137px) {
+                .block-learn__btn {
+                    font-size: 2rem;
+                }
             }
         }
 
@@ -42,6 +57,21 @@
                 display: flex;
                 column-gap: 16/344 * 100%;
                 align-items: center;
+                border-radius: 10px;
+
+                &:not(:last-child) {
+                    margin: 0 0 16px;
+                }
+
+                &.benefits__item_hidden {
+                    display: none;
+                }
+
+                @media (min-width: 1440px) {
+                    &.benefits__item_hidden {
+                        display: flex;
+                    }
+                }
 
                 .benefits__item__img {
                     width: 96/344 * 100%;
@@ -63,10 +93,6 @@
                 }
 
                 .benefits__item__text {
-                    
-                    &:not(:last-child) {
-                        margin: 0 0 16px;
-                    }
 
                     .benefits__item__title {
                         font-weight: 700;
@@ -84,6 +110,16 @@
                         font-size: 1.4rem;
                         line-height: 24/14 * 100%;  
                     }
+
+                    @media (min-width: 1137px) {
+                        .benefits__item__title {
+                            font-size: 2.4rem;
+                        }
+
+                        .benefits__item__description {
+                            font-size: 1.8rem;
+                        }
+                    }
                 }
             }
         }
@@ -91,14 +127,12 @@
         .start-cook {
             padding: 39px 32px 28px;
             border-radius: 20px;
-            // box-shadow: 0 20px 20px 0 rgba(36, 54, 59, 0.17),
-            //             0 5px 11px 0 rgba(36, 54, 59, 0.2);
+            box-shadow: 0 20px 20px 0 rgba(36, 54, 59, 0.17),
+                        0 5px 11px 0 rgba(36, 54, 59, 0.2);
             color: white;
-            background: url("../assets/images/start-cook-background.svg");
+            background: url("../assets/images/start-cook-background.jpg");
             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center top;
-            // position: relative;
+            background-position: center;
 
             .start-cook__header {
                 display: flex;
@@ -129,14 +163,112 @@
             }
         }
     }
+}
 
-    @media (min-width: 834px) {
+@media (min-width: 834px) {
+    .middle-section {
+        margin: 0 0 8.3vw;
+
         .middle-section__container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2.5%;
 
             .block-learn {
+                grid-row-start: 2;
+                grid-column-start: 2;     
+                align-self: flex-start;     
+                margin: 0 0 24px;      
+                aspect-ratio: 342/178;
+                background-position: right;
+            }
+
+            .middle-section__undertitle {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                p {
+                    font-size: 2rem;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .benefits {
+                grid-row-start: 2;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                align-self: stretch;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .benefits__item {
+                    padding: 18.5px 5px 18.5px 19px;
+                    width: 100%;
+                    margin: 0;
+
+                    .benefits__item__img {
+                        width: 37%;
+                        aspect-ratio: 106/78;
+                    }
+                }
+            }
+
+            .start-cook {
+                grid-column-start: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                aspect-ratio: 344/324;
+
+                .start-cook__header {
+                    margin: 0 0 136/834 * 100vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .middle-section {
+        margin: 0 0 42px;
+
+        .middle-section__container {
+
+            .block-learn {
+                aspect-ratio: 608/303;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;  
+                margin: 0 0 40px;
                 
+                .block-learn__text {
+                    max-width: 65%;
+                }
+            }
+
+            .benefits {
+
+                .benefits__item {
+                    padding: 8px 30px 8px 8px;
+
+                    .benefits__item__img {
+                        width: 32%;
+                        aspect-ratio: 181/98;
+                    }
+                }
+            }
+
+            .start-cook {
+                aspect-ratio: 608/339;
+
+                .start-cook__header {
+                    margin: 0 0 138px;
+                }
             }
         }
     }

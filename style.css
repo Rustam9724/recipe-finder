@@ -131,6 +131,12 @@
   }
 }
 
+.middle-section {
+  margin: 0 0 14vw;
+}
+.middle-section .middle-section__container {
+  display: grid;
+}
 .middle-section .middle-section__container .block-learn {
   padding: 22px 24px 16px;
   border-radius: 15px;
@@ -147,6 +153,12 @@
   margin: 0 0 14px;
   max-width: 65%;
 }
+@media (min-width: 1137px) {
+  .middle-section .middle-section__container .block-learn .block-learn__text {
+    font-size: 2.6rem;
+    max-width: 70%;
+  }
+}
 .middle-section .middle-section__container .block-learn .block-learn__btn {
   padding: 7.5px 22.5px;
   background-color: white;
@@ -154,6 +166,11 @@
   font-size: 1.4rem;
   line-height: 121.4285714286%;
   color: #F6B100;
+}
+@media (min-width: 1137px) {
+  .middle-section .middle-section__container .block-learn .block-learn__btn {
+    font-size: 2rem;
+  }
 }
 .middle-section .middle-section__container .middle-section__undertitle {
   margin: 0 0 8px;
@@ -173,6 +190,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+}
+.middle-section .middle-section__container .benefits .benefits__item:not(:last-child) {
+  margin: 0 0 16px;
+}
+.middle-section .middle-section__container .benefits .benefits__item.benefits__item_hidden {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .middle-section .middle-section__container .benefits .benefits__item.benefits__item_hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .middle-section .middle-section__container .benefits .benefits__item .benefits__item__img {
   width: 27.9069767442%;
@@ -192,9 +223,6 @@
      object-fit: cover;
   border-radius: 10px;
 }
-.middle-section .middle-section__container .benefits .benefits__item .benefits__item__text:not(:last-child) {
-  margin: 0 0 16px;
-}
 .middle-section .middle-section__container .benefits .benefits__item .benefits__item__text .benefits__item__title {
   font-weight: 700;
   font-size: 1.8rem;
@@ -210,14 +238,23 @@
   font-size: 1.4rem;
   line-height: 171.4285714286%;
 }
+@media (min-width: 1137px) {
+  .middle-section .middle-section__container .benefits .benefits__item .benefits__item__text .benefits__item__title {
+    font-size: 2.4rem;
+  }
+  .middle-section .middle-section__container .benefits .benefits__item .benefits__item__text .benefits__item__description {
+    font-size: 1.8rem;
+  }
+}
 .middle-section .middle-section__container .start-cook {
   padding: 39px 32px 28px;
   border-radius: 20px;
+  -webkit-box-shadow: 0 20px 20px 0 rgba(36, 54, 59, 0.17), 0 5px 11px 0 rgba(36, 54, 59, 0.2);
+          box-shadow: 0 20px 20px 0 rgba(36, 54, 59, 0.17), 0 5px 11px 0 rgba(36, 54, 59, 0.2);
   color: white;
-  background: url("../assets/images/start-cook-background.svg");
+  background: url("../assets/images/start-cook-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
 }
 .middle-section .middle-section__container .start-cook .start-cook__header {
   display: -webkit-box;
@@ -250,6 +287,110 @@
   line-height: 125%;
 }
 
+@media (min-width: 834px) {
+  .middle-section {
+    margin: 0 0 8.3vw;
+  }
+  .middle-section .middle-section__container {
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 2.5%;
+            column-gap: 2.5%;
+  }
+  .middle-section .middle-section__container .block-learn {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0 0 24px;
+    aspect-ratio: 342/178;
+    background-position: right;
+  }
+  .middle-section .middle-section__container .middle-section__undertitle {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .middle-section .middle-section__container .middle-section__undertitle p {
+    font-size: 2rem;
+  }
+  .middle-section .middle-section__container .middle-section__undertitle a {
+    font-size: 1.5rem;
+  }
+  .middle-section .middle-section__container .benefits {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .middle-section .middle-section__container .benefits .benefits__item {
+    padding: 18.5px 5px 18.5px 19px;
+    width: 100%;
+    margin: 0;
+  }
+  .middle-section .middle-section__container .benefits .benefits__item .benefits__item__img {
+    width: 37%;
+    aspect-ratio: 106/78;
+  }
+  .middle-section .middle-section__container .start-cook {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    aspect-ratio: 344/324;
+  }
+  .middle-section .middle-section__container .start-cook .start-cook__header {
+    margin: 0 0 16.3069544365vw;
+  }
+}
+@media (min-width: 1440px) {
+  .middle-section {
+    margin: 0 0 42px;
+  }
+  .middle-section .middle-section__container .block-learn {
+    aspect-ratio: 608/303;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 40px;
+  }
+  .middle-section .middle-section__container .block-learn .block-learn__text {
+    max-width: 65%;
+  }
+  .middle-section .middle-section__container .benefits .benefits__item {
+    padding: 8px 30px 8px 8px;
+  }
+  .middle-section .middle-section__container .benefits .benefits__item .benefits__item__img {
+    width: 32%;
+    aspect-ratio: 181/98;
+  }
+  .middle-section .middle-section__container .start-cook {
+    aspect-ratio: 608/339;
+  }
+  .middle-section .middle-section__container .start-cook .start-cook__header {
+    margin: 0 0 138px;
+  }
+}
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
