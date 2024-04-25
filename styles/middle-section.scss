@@ -1,0 +1,143 @@
+.middle-section {
+
+    .middle-section__container {
+
+        .block-learn {
+            padding: 22px 24px 16px;
+            border-radius: 15px;
+            background-image: url("../assets/images/learning-background.jpg");
+            background-size: cover;  
+            margin: 0 0 16px;  
+            aspect-ratio: 344/128;
+
+            .block-learn__text {
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 22/18 * 100%;
+                color: white;
+                margin: 0 0 14px;
+                max-width: 65%;
+            }
+
+            .block-learn__btn {
+                padding: 7.5px 22.5px;
+                background-color: white;
+                border-radius: 50px;
+                font-size: 1.4rem;
+                line-height: 17/14 * 100%;
+                color: $primary;
+            }
+        }
+
+        .middle-section__undertitle {
+            margin: 0 0 8px;
+        }
+
+        .benefits {
+            margin: 0 0 24px;
+
+            .benefits__item {
+                box-shadow: 0px 4px 40px 0 rgba(0, 0, 0, 0.1);
+                padding: 8px;
+                display: flex;
+                column-gap: 16/344 * 100%;
+                align-items: center;
+
+                .benefits__item__img {
+                    width: 96/344 * 100%;
+                    aspect-ratio: 96/72;
+                    border-radius: 10px;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+
+                .benefits__item__text {
+                    
+                    &:not(:last-child) {
+                        margin: 0 0 16px;
+                    }
+
+                    .benefits__item__title {
+                        font-weight: 700;
+                        font-size: 1.8rem;
+                        line-height: 32/18 * 100%;
+                        color: $secondary;
+                    }
+
+                    .benefits__item__description {
+                        padding-left: 20px;
+                        background-image: url("../assets/images/check.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 24/14 * 100%;  
+                    }
+                }
+            }
+        }
+
+        .start-cook {
+            padding: 39px 32px 28px;
+            border-radius: 20px;
+            // box-shadow: 0 20px 20px 0 rgba(36, 54, 59, 0.17),
+            //             0 5px 11px 0 rgba(36, 54, 59, 0.2);
+            color: white;
+            background: url("../assets/images/start-cook-background.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            // position: relative;
+
+            .start-cook__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 136/375 * 100vw;
+
+                .start-cook__btn {
+                    padding: 7.5px 13px;
+                    border-radius: 10px;
+                    background-color: $primary;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 18/15 * 100%;
+                }
+            }
+
+            .start-cook__title {
+                font-weight: 600;
+                font-size: 2.8rem;
+                line-height: 32/28 * 100%;
+                margin: 0 0 15px;
+            }
+
+            .start-cook__text {
+                font-size: 1.6rem;
+                line-height: 20/16 * 100%;
+            }
+        }
+    }
+
+    @media (min-width: 834px) {
+        .middle-section__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .block-learn {
+                
+            }
+        }
+    }
+}
