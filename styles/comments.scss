@@ -1,4 +1,6 @@
 .comments {
+    margin: 0 0 10vw;
+    
     .comments__container {
 
         .comments__title-block {
@@ -91,7 +93,8 @@
 
 @media (min-width: 834px) {
     .comments {
-
+        margin: 0;
+        
         .comments__container {
     
             .comments__title-block {

@@ -2,6 +2,7 @@
 @import "./styles/top-section.scss";
 @import "./styles/middle-section.scss";
 @import "./styles/comments.scss";
+@import "./styles/footer.scss";
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
     padding: 0;
@@ -52,12 +53,12 @@ html, body {
 
 @media (min-width: 834px) {
     ._container {
-        padding: 0 7.8%;
+        padding: 0 7.8% 40px;
     }
 }
 
 @media (min-width: 1440px) {
     ._container {
-        padding: 0 102px;
+        padding: 0 102px 46px;
     }
 }

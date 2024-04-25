@@ -414,6 +414,9 @@
     margin: 0 0 138px;
   }
 }
+.comments {
+  margin: 0 0 10vw;
+}
 .comments .comments__container .comments__title-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,6 +508,9 @@
 }
 
 @media (min-width: 834px) {
+  .comments {
+    margin: 0;
+  }
   .comments .comments__container .comments__title-block {
     margin: 0 0 31px;
   }
@@ -534,6 +540,58 @@
   }
   .comments .comments__container .comments__main .item-comments .item-comments__footer {
     font-size: 1.5rem;
+  }
+}
+.footer {
+  background-image: url("../assets/images/footer-background.jpg");
+  background-size: cover;
+}
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.footer .footer__container .footer__side {
+  width: 27.4666666667%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footer__container .footer__world {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 14.9333333333%;
+  aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6B100;
+  border-radius: 100%;
+}
+
+@media (min-width: 834px) {
+  .footer {
+    display: none;
   }
 }
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
@@ -588,11 +646,11 @@ html, body {
 
 @media (min-width: 834px) {
   ._container {
-    padding: 0 7.8%;
+    padding: 0 7.8% 40px;
   }
 }
 @media (min-width: 1440px) {
   ._container {
-    padding: 0 102px;
+    padding: 0 102px 46px;
   }
 }
