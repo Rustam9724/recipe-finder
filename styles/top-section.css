@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$secondary".
-        on line 40 of D:\web\Repos\recipe-finder\styles\top-section.scss
+        on line 41 of D:\web\Repos\recipe-finder\styles\top-section.scss
 
-35:                 
-36:                 .item-recipe__title {
-37:                     font-weight: 700;
-38:                     font-size: 1.8rem;
-39:                     line-height: 24/18 * 100%;
-40:                     color: $secondary;
-41:                 }
-42: 
-43:                 .item-recipe__footer {
-44:                     width: 100%;
-45:                     display: flex;
+36:                 
+37:                 .item-recipe__title {
+38:                     font-weight: 700;
+39:                     font-size: 1.8rem;
+40:                     line-height: 24/18 * 100%;
+41:                     color: $secondary;
+42:                 }
+43: 
+44:                 .item-recipe__footer {
+45:                     width: 100%;
+46:                     display: flex;
 
 Backtrace:
-D:\web\Repos\recipe-finder\styles\top-section.scss:40
+D:\web\Repos\recipe-finder\styles\top-section.scss:41
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -106,4 +106,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary\".\A         on line 40 of D:\web\Repos\recipe-finder\styles\top-section.scss\A \A 35:                 \A 36:                 .item-recipe__title {\A 37:                     font-weight: 700;\A 38:                     font-size: 1.8rem;\A 39:                     line-height: 24/18 * 100%;\A 40:                     color: $secondary;\A 41:                 }\A 42: \A 43:                 .item-recipe__footer {\A 44:                     width: 100%;\A 45:                     display: flex;"; }
+  content: "Error: Undefined variable: \"$secondary\".\A         on line 41 of D:\web\Repos\recipe-finder\styles\top-section.scss\A \A 36:                 \A 37:                 .item-recipe__title {\A 38:                     font-weight: 700;\A 39:                     font-size: 1.8rem;\A 40:                     line-height: 24/18 * 100%;\A 41:                     color: $secondary;\A 42:                 }\A 43: \A 44:                 .item-recipe__footer {\A 45:                     width: 100%;\A 46:                     display: flex;"; }
