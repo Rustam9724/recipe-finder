@@ -504,6 +504,38 @@
           column-gap: 8px;
 }
 
+@media (min-width: 834px) {
+  .comments .comments__container .comments__title-block {
+    margin: 0 0 31px;
+  }
+  .comments .comments__container .comments__title-block .comments__title {
+    font-size: 2.4rem;
+  }
+  .comments .comments__container .comments__title-block svg {
+    display: none;
+  }
+  .comments .comments__container .comments__main .item-comments:not(:last-child) {
+    margin: 0 0 13px;
+  }
+  .comments .comments__container .comments__main .item-comments .item-comments__header {
+    -webkit-column-gap: 3.6931818182%;
+            column-gap: 3.6931818182%;
+    margin: 0 0 22px;
+  }
+  .comments .comments__container .comments__main .item-comments .item-comments__header .item-comments__image {
+    width: 9.9431818182%;
+  }
+  .comments .comments__container .comments__main .item-comments .item-comments__header .item-comments__title {
+    font-size: 2rem;
+  }
+  .comments .comments__container .comments__main .item-comments .item-comments__text {
+    font-size: 1.6rem;
+    margin: 0 0 25px;
+  }
+  .comments .comments__container .comments__main .item-comments .item-comments__footer {
+    font-size: 1.5rem;
+  }
+}
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;

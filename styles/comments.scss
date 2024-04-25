@@ -88,3 +88,55 @@
         }
     }
 }
+
+@media (min-width: 834px) {
+    .comments {
+
+        .comments__container {
+    
+            .comments__title-block {
+                margin: 0 0 31px;
+    
+                .comments__title {
+                    font-size: 2.4rem;
+                }
+
+                svg {
+                    display: none;
+                }
+            }
+    
+            .comments__main {
+    
+                .item-comments {
+    
+                    &:not(:last-child) {
+                        margin: 0 0 13px;
+                    }
+                    
+                    .item-comments__header {
+                        column-gap: 26/704 * 100%;
+                        margin: 0 0 22px;
+    
+                        .item-comments__image {
+                            width: 70/704 * 100%;
+                        }
+    
+                        .item-comments__title {
+                            font-size: 2rem;
+                        }
+                    }
+    
+                    .item-comments__text {
+                        font-size: 1.6rem;
+                        margin: 0 0 25px;
+                    }
+    
+                    .item-comments__footer {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
