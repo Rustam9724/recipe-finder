@@ -96,7 +96,7 @@
         margin: 0;
         
         .comments__container {
-    
+            
             .comments__title-block {
                 margin: 0 0 31px;
     
@@ -139,6 +139,18 @@
                         font-size: 1.5rem;
                     }
                 }
+            }
+        }
+
+        @media (min-width: 834px) {
+            .comments__container {
+                padding-bottom: 40px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .comments__container {
+                padding-bottom: 46px;
             }
         }
     }

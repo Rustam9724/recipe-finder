@@ -72,3 +72,36 @@
         }
     }
 }
+
+@media (min-width: 605px) {
+    .header {
+        padding: 45px 0;
+    
+        .header__container {
+            
+            .header__main {
+                justify-content: space-between;
+                margin: 0;
+    
+                .header__burger-btn {
+                    display: none;
+                }
+    
+                .header__title {
+                    font-size: 4rem;
+                    position: static;
+                    transform: unset;
+                }
+    
+                .header__icons {
+                    display: flex;
+                }
+    
+            }
+    
+            .header__search {
+                display: none;
+            }
+        }
+    } 
+}

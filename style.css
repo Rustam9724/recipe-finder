@@ -545,6 +545,17 @@
     font-size: 1.5rem;
   }
 }
+@media (min-width: 834px) and (min-width: 834px) {
+  .comments .comments__container {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 834px) and (min-width: 1440px) {
+  .comments .comments__container {
+    padding-bottom: 46px;
+  }
+}
+
 .footer {
   background-image: url("../assets/images/footer-background.jpg");
   background-size: cover;
@@ -695,6 +706,34 @@
   color: #9F9F9F;
 }
 
+@media (min-width: 605px) {
+  .header {
+    padding: 45px 0;
+  }
+  .header .header__container .header__main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
+  .header .header__container .header__main .header__burger-btn {
+    display: none;
+  }
+  .header .header__container .header__main .header__title {
+    font-size: 4rem;
+    position: static;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .header .header__container .header__main .header__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .header__container .header__search {
+    display: none;
+  }
+}
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
@@ -747,7 +786,7 @@ html, body {
 
 @media (min-width: 834px) {
   ._container {
-    padding: 0 7.8% 40px;
+    padding: 0 7.8%;
   }
 }
 @media (min-width: 1440px) {
