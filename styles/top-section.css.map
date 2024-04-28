@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIQ,6DAAyB;EACrB,MAAM,EAAE,QAAQ;AAGpB,0DAAsB;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAE9B,uEAAa;IACT,KAAK,EAAE,KAAK;IAEZ,yFAAkB;MACd,KAAK,EAAE,IAAI",
-"sources": ["top-section.scss"],
-"names": [],
-"file": "top-section.css"
-}
